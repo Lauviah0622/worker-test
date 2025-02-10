@@ -13,6 +13,9 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+
+		console.log(request, env, ctx);
+		
+		return new Response('Hello World!2');
 	},
 } satisfies ExportedHandler<Env>;
